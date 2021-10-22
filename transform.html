@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .transform {
+            background-color: blanchedalmond;
+            height: 500px;
+        }
+
+        .box {
+            border: 2px solid red;
+            display: inline-block;
+            /* transform: translate(120px,56px) rotate(45deg); */
+            /* transform-origin: 0; */
+            /* transform: scale(4 ,5); */
+            /* transform: skew(10deg,10deg); */
+        }
+
+        .img:hover {
+            width: 40px;
+            /* height: 40px; */
+        }
+
+        .img {
+            /* height: 200px; */
+            width: 200px;
+            transition-property: width;
+            transition-duration: 7s;
+            transition-timing-function: ease-in;
+            transition-delay: 2s;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="transform">
+        <div class="box">
+            <img class="img" src="pic.jpg.jpg" alt="">
+            <!-- <img src="https://picsum.photos/id/684/600/400" alt=""> -->
+        </div>
+    </div>
+</body>
+
+</html>

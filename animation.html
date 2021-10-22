@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .animation{
+            background-color: bisque;
+            width: 100vw;
+            height: 100vh;
+        }
+        .box{
+            width: 300px;
+            background-color: rgb(194, 31, 31);
+            color: white;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: widthanimate;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        }
+        @keyframes widthanimate{
+            form{
+                width: 300px;
+            }
+            to{
+                width: 1300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animation">
+        <div class="box">
+            this is ajay
+        </div>
+    </div>
+</body>
+</html>

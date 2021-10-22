@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        li {
+            display: inline;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            height: 50px;
+            position: sticky;
+            top: 0;
+        }
+
+        p {
+            text-align: center;
+            border: 2px solid red;
+            height: 1000px;
+        }
+
+        .container {
+            background-color: aqua;
+            height: 50vh;
+            width: 50vw;
+            margin: auto;
+
+        }
+
+        .box {
+            background-color: yellow;
+            height: 200px;
+            width: 200px;
+            /* position: relative; */
+            /* top: 50px; */
+            /* right: 4px; */
+            /* bottom: 1000px; */
+            /* bottom: 100px; */
+            /* left: 20px; */
+            position: absolute;
+        }
+
+        .box2 {
+            background-color: rosybrown;
+            color: royalblue;
+            height: 200px;
+            width: 100px;
+            /* position: relative; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- position
+    1= static   top, bottom, right, lift, z-index     ye defolt position hoti hai 
+    2= relative    ye lgane se top,bottam,lift,right ko set kr sakte hai
+    3= absolute    ye hata deta hai
+    4= fixed       ye fixed kr deda hai
+    5=sticky       scroll krne me fixed
+ -->
+
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Content</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias debitis quia quos consequuntur atque eius
+            maiores? Veritatis possimus sint necessitatibus quibusdam nesciunt quae voluptates sed molestiae officia
+            cumque dolorem accusantium eos voluptate magni architecto rem vel eius totam itaque natus, odio, doloremque
+            nihil consequuntur ullam! Eos sint temporibus facilis vero?</p>
+        <div class="box">
+            i am a box
+        </div>
+        <div class="box2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </div>
+    </div>
+</body>
+
+</html>

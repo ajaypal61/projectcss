@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: antiquewhite;
+            height: 50vh;
+            align-items: center;
+            /* align-content: center; */
+        }
+
+        .box1 {
+            height: 230px;
+            width: 230px;
+            background-color: aqua;
+            border: 2px solid black;
+            /* align-self: flex-end; */
+            /* flex-grow: 1; */
+        }
+
+        .box2 {
+            height: 230px;
+            width: 230px;
+            background-color: rgb(226, 25, 25);
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- flex
+    flex-wrap= ye size ke hisab se set ho jata hai
+    justify content
+    align-items
+    align-conent -->
+
+
+    <!-- 
+    order= ye set kr deta hai order
+    align-self= kisi ek box ko neche ya upr lane ke liye use kiya jata hai 
+    flex-grow= 4-5 box ko sahi se set krne me
+     -->
+
+
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box2">box2a</div>
+        <div class="box2">box2b</div>
+    </div>
+</body>
+
+</html>
